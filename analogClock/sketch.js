@@ -20,6 +20,7 @@ function draw() {
   //arc function
   strokeWeight(8);
   noFill();
+  fill(200);
   stroke(224, 123, 57);
   let secondsAngle = map(sec, 0, 60, 0, 360);
   arc(0, 0, 300, 300, 0, secondsAngle);
@@ -45,15 +46,15 @@ function draw() {
   push();
   rotate(minuteAngle);
   stroke(30, 129, 176);
-  line(0, 0, 80, 0);
+  line(0, 0, 75, 0);
   pop();
 
   push();
   rotate(hourAngle);
   stroke(43, 138, 59);
-  line(0, 0, 60, 0);
+  line(0, 0, 50, 0);
   pop();
 
-  stroke(255);
+  stroke(0);
   point(0, 0);
 }
